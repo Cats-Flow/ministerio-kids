@@ -12056,7 +12056,7 @@ function ya() {
         S.jsx("p", { children: "© 2024 Cat`s Flow" }),
         S.jsxs("span", {
           children: [
-            S.jsxs("span", { children: [S.jsx(Q1, {}), "B1.0.1"] }),
+            S.jsxs("span", { children: [S.jsx(Q1, {}), "B1.0.2"] }),
             S.jsx("button", {
               className: "_btn",
               onClick: e,
