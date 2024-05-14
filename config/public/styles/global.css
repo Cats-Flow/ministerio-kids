@@ -3,6 +3,7 @@
 @import url(./reset.css);
 @import url(./presets.css);
 @import url(./cards.css);
+@import url(./pages.css);
 
 :root {
   /* Color's */

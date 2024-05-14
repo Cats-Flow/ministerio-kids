@@ -1,20 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { Footer } from "../content/footer";
 import { Header } from "../content/header";
-import { ArrowUUpLeft, House, Browsers } from "@phosphor-icons/react";
-import { verifyToken } from '../function/verifytoken';
+import { ArrowUUpLeft, House } from "@phosphor-icons/react";
 
 export function NotFoundPage() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  useEffect(() => {
-    const token = sessionStorage.getItem('token');
-    if (token) {
-      verifyToken(token).then(isAuth => setIsAuthenticated(isAuth));
-    }
-  }, []);
-
   const ReturnPage = () => {
     window.history.back();
   };
@@ -43,12 +33,6 @@ export function NotFoundPage() {
                 Voltar
               </button>
             </nav>
-            {isAuthenticated && (
-              <a title="Painel inicial" className="_btn" href="/dash">
-                <Browsers />
-                Painel inicial
-              </a>
-            )}
           </div>
         </section>
       </main>
