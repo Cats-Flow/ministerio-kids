@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./home";
 import { NotFoundPage } from "./notpage";
 import { SKT } from "./sistema/tutorial";
+import { SKR } from "./sistema/skr";
 
 export function App() {
   return (
@@ -16,6 +17,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sistema/tutorial" element={<SKT />} />
+        <Route path="/sistema/kids" element={<SKR />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
