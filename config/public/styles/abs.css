@@ -1,0 +1,11 @@
+@media screen and (min-width: 375px) {
+  .kids {
+    border-left: var(--border);
+    border-right: var(--border);
+  }
+
+  .kids ._body {
+    border-left: none;
+    border-right: none;
+  }
+}

@@ -1,0 +1,248 @@
+/* Outher  */
+.kids .ico {
+  font-size: 1.5rem;
+}
+
+.kids ._cnt {
+  display: flex;
+  align-items: center;
+  
+  width: 100%;
+
+  gap: var(--space);
+}
+
+.kids ._cnt p {
+  border: var(--border);
+  border-radius: var(--br);
+
+  padding: 0.8rem;
+  font-size: 0.93rem;
+
+  width: 100%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/** Card - Global */
+.kids ._card {
+  background-color: var(--color-2);
+
+  border: var(--border);
+  border-radius: var(--br);
+
+  padding: 1.5rem 1rem;
+
+  margin: 0 1rem 0 var(--space);
+
+  gap: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  text-align: justify;
+}
+
+.kids ._card.alert {
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 23px;
+}
+
+.kids ._card ._fav {
+  background-color: var(--color-12);
+
+  border: var(--border);
+  border-radius: var(--br);
+
+  width: 3.12rem;
+  height: 3.12rem;
+
+  display: grid;
+  place-content: center;
+
+  position: absolute;
+  top: -25px;
+  right: 1rem;
+}
+
+.kids ._card ._fav.rd {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  font-size: 1rem;
+}
+
+.kids ._card h2 {
+  text-align: start;
+}
+
+.kids ._card h2.center {
+  text-align: center;
+}
+
+.kids ._card::after {
+  background-color: var(--color-6);
+  border-radius: var(--br);
+
+  content: "";
+
+  display: block;
+
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+
+  z-index: -1;
+}
+
+/* Buttons & Links  */
+.kids ._btn {
+  border: var(--border);
+  border-radius: var(--br);
+
+  display: flex;
+  align-items: center;
+
+  gap: var(--space);
+
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  width: 100%;
+
+  cursor: pointer;
+}
+
+.kids ._btn.ico {
+  display: grid;
+  place-content: center;
+}
+
+.kids ._btn.center {
+  justify-content: center;
+}
+
+.kids ._btn:disabled {
+  cursor: not-allowed;
+}
+
+.kids ._btn:hover {
+  transition: var(--transition) !important;
+  background-color: var(--color-11) !important;
+}
+
+.kids ._btn:focus-visible {
+  transition: var(--transition);
+
+  outline: var(--outline);
+  background-color: var(--color-11);
+}
+
+.kids ._btn.rd {
+  width: auto;
+}
+
+.kids ._btn.active {
+  background-color: var(--color-12);
+}
+
+/* Forms */
+.kids ._input,
+.kids ._select,
+.kids ._textarea {
+  border: var(--border);
+  border-radius: var(--br);
+
+  padding: 0.8rem;
+
+  width: 100%;
+}
+
+.kids ._input::placeholder,
+.kids ._textarea::placeholder {
+  color: var(--color-6);
+}
+
+.kids ._textarea {
+  height: 5rem;
+  resize: none;
+}
+
+.kids ._select {
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.kids ._select .camp {
+  background-color: transparent;
+
+  padding: 0.8rem;
+
+  width: 100%;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.kids ._select .css-162mkon {
+  position: absolute;
+  right: .8rem;
+  top: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  font-size: 1.5rem;
+}
+
+.kids ._input:hover,
+.kids ._textarea:hover,
+.kids ._select:hover {
+  transition: var(--transition) !important;
+  border: 2px solid var(--color-11) !important;
+}
+
+.kids ._input:focus-visible,
+.kids ._textarea:focus-visible,
+.kids ._select:focus-visible {
+  border: 2px solid var(--color-11) !important;
+  outline: var(--outline) !important;
+}
+
+/* Containers  */
+.kids ._div,
+.kids ._nav,
+.kids ._list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.kids ._list {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+@media screen and (min-width: 425px) {
+  .kids ._nav {
+    flex-direction: row;
+  }
+}
